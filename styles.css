@@ -31,3 +31,32 @@ body {
   height: auto;
   border-radius: 10px;
 }
+
+.brunch-Menu {
+padding: 100px 50px;
+
+
+
+
+}
+
+.brunchImage {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.brunchTitle {
+
+    font-family: cursive;
+}
+
+
+ul{
+ list-style-type: none;
+}
+
+.ingredients, p {
+    font-size: 14pt;
+}

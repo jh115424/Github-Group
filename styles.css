@@ -60,3 +60,7 @@ ul{
 .ingredients, p {
     font-size: 14pt;
 }
+
+.ingredients:hover {
+    background-color: white;
+}

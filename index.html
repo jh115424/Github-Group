@@ -1,35 +1,87 @@
 <!DOCTYPE html>
+
 <head>
   <meta charset="ut-8" />
   <title>Restaurant Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <script defer src="https://unpkg.com/alpinejs-cursor@latest/dist/cursor.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <html>
-  <body>
+<body x-data x-cursor .5>
+
     <!-- THIS IS A FLEXBOX INSIDE A FLEXBOX FOR THE HEADERS -->
     <!-- THAT IS HOW I GOT THE SPACING -->
-    <div class="main-Header">
-      <h2>Partania's Mediterranean Bistro</h2>
+ <div class="alt-Header">
+<div class="main-Header">
+      <div>
+        <h1>Partania's Mediterranean Bistro</h1>
+      </div>
       <div class="contactInfo">
-        <h2 style="font-size: 15px">
+        <h2 style="font-size: 18px">
           <a href="tel:123-453-1800" style="color: red; font-weight: 800;">Phone: 123-453-1800</a>
         </h2>
         <h2 style="font-size: 15px">
-          address: 456 e. Erie Ave Chicago, Ill 60640
+          Address: 456 e. Erie Ave Chicago, Ill 60640
         </h2>
-        <h2 style="font-size: 15px"><a href="http://www.PartaniasBistro.com" style="color: red; font-weight: 800;">PartaniasBistro.com</a></h2>
+        <h2 style="font-size: 15px"><a href="http://www.PartaniasBistro.com"
+            style="color: red; font-weight: 800;">PartaniasBistro.com</a></h2>
+      </div>
+</div>
+ </div>
 
+<div class="wrapper">
+    <div class="main-image">
+      <img id="heroImg" src="/images/mainImage.jpeg" class="shrimpPlate" />
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80">
+        </div>
+        <div class="card-text">
+          <p class="card-meal-type">Breakfast/Eggs</p>
+          <h2 class="card-title">Délicieux Bénédicte</h2>
+          <p class="card-body">Eggs Benedict with hollandaise sauce, crispy bacon and an assortment of garden herbs.</p>
+        </div>
+        <div class="card-price">Brunch-Menu</div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80">
+        </div>
+        <div class="card-text">
+          <p class="card-meal-type">Breakfast/Eggs</p>
+          <h2 class="card-title">Délicieux Bénédicte</h2>
+          <p class="card-body">Eggs Benedict with hollandaise sauce, crispy bacon and an assortment of garden herbs.</p>
+        </div>
+        <div class="card-price">Brunch-Menu</div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80">
+        </div>
+        <div class="card-text">
+          <p class="card-meal-type">Breakfast/Eggs</p>
+          <h2 class="card-title">Délicieux Bénédicte</h2>
+          <p class="card-body">Eggs Benedict with hollandaise sauce, crispy bacon and an assortment of garden herbs.</p>
+        </div>
+        <div class="card-price">Brunch-Menu</div>
       </div>
     </div>
 
-    <div class="main-image">
-      <img src="/images/mainImage.jpeg" class="shrimpPlate" />
-    </div>
+   
+
+
     <div class="brunch-Menu">
-      <h1 class="brunch-Title">Brunch</h1>
-      <p>Saturdays and Sundays 10:30am - 2:30pm</p>
-      <img src="/images/brushetta.jpg" class="brunchImage" />
       <ul class="brunchFoodList">
         <li class="ingredients">
           Greek Bruschetta - Roasted Garlic, tomato, fresh basil, cream cheese
@@ -55,5 +107,9 @@
         </li>
       </ul>
     </div>
-  </body>
+
+
+  </div>
+
+</body>
 </html>
